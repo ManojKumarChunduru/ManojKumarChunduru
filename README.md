@@ -5,7 +5,7 @@ I work the seam where clinical operations become revenue, and I build analytics 
 <p>
   <a href="mailto:hello.manojchunduru@gmail.com"><img src="https://img.shields.io/badge/Email-hello.manojchunduru%40gmail.com-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
   <!-- [VERIFY] replace YOUR-SLUG with the real LinkedIn slug before pushing -->
-  <a href="https://www.linkedin.com/in/YOUR-SLUG"><img src="https://img.shields.io/badge/LinkedIn-Manoj%20Kumar%20Chunduru-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
+  <a href="http://www.linkedin.com/in/manoj-kumar-b4984762"><img src="https://img.shields.io/badge/LinkedIn-Manoj%20Kumar%20Chunduru-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
   <img src="https://img.shields.io/badge/Open%20to-Epic%20Analyst%20%7C%20RCM%20Analytics-0D1117?style=for-the-badge&logo=githubsponsors&logoColor=80ed99" alt="Open to roles"/>
 </p>
 
@@ -73,7 +73,7 @@ I learned the revenue cycle from inside its workflows: UAT scripts, workqueues, 
 <p>
   <a href="mailto:hello.manojchunduru@gmail.com"><img src="https://img.shields.io/badge/&#9993;&#65039;%20Email-0D1117?style=for-the-badge" alt="Email"/></a>
   <!-- [VERIFY] LinkedIn slug -->
-  <a href="https://www.linkedin.com/in/YOUR-SLUG"><img src="https://img.shields.io/badge/&#128188;%20LinkedIn-0D1117?style=for-the-badge" alt="LinkedIn"/></a>
+  <a href="http://www.linkedin.com/in/manoj-kumar-b4984762"><img src="https://img.shields.io/badge/&#128188;%20LinkedIn-0D1117?style=for-the-badge" alt="LinkedIn"/></a>
   <a href="https://github.com/ManojKumarChunduru?tab=repositories"><img src="https://img.shields.io/badge/&#128230;%20All%20repos-0D1117?style=for-the-badge" alt="Repositories"/></a>
 </p>
 
