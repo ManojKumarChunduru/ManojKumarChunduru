@@ -1,0 +1,141 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manoj Kumar Chunduru, Epic Hospital Billing Analyst, Revenue Cycle Analytics">
+  <defs>
+    <linearGradient id="headline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2DD4BF">
+        <animate attributeName="stop-color" values="#2DD4BF;#58A6FF;#3FB950;#2DD4BF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#58A6FF">
+        <animate attributeName="stop-color" values="#58A6FF;#3FB950;#2DD4BF;#58A6FF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#3FB950">
+        <animate attributeName="stop-color" values="#3FB950;#2DD4BF;#58A6FF;#3FB950" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="pulseGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3FB950" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3FB950" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="typewriter">
+      <rect x="48" y="158" width="0" height="22">
+        <animate attributeName="width" from="0" to="392" begin="0.8s" dur="2.6s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="220" fill="#0D1117"/>
+
+  <!-- faint grid -->
+  <g stroke="#21262D" stroke-width="1">
+    <path d="M0,55 H900 M0,110 H900 M0,165 H900"/>
+    <path d="M112,0 V220 M225,0 V220 M337,0 V220 M450,0 V220 M562,0 V220 M675,0 V220 M787,0 V220"/>
+  </g>
+
+  <!-- drifting particles -->
+  <g fill="#30363D">
+    <circle cx="0" cy="0" r="2">
+      <animateMotion path="M120,30 q60,25 130,5 q70,-20 140,10" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="1.5">
+      <animateMotion path="M90,205 q90,-18 180,4 q90,20 170,-8" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="2">
+      <animateMotion path="M480,25 q-70,30 -150,12" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- the revenue cycle, instrumented: CHARGE -> CLAIM -> PAYER -> PAID / DENIED, with a recovery loop -->
+  <g stroke="url(#edge)" stroke-width="1.4" fill="none">
+    <path d="M563,55 H637"/>
+    <path d="M653,55 H727"/>
+    <path d="M743,52 L837,36"/>
+    <path d="M743,58 L837,90"/>
+    <!-- recovery loop: denied claims come back fixed -->
+    <path d="M845,101 C 820,145 690,140 646,66" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="0;-40" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- stage nodes -->
+  <g font-family="Consolas, Monaco, monospace" font-size="9" text-anchor="middle">
+    <circle cx="555" cy="55" r="8" fill="#161B22" stroke="#2DD4BF" stroke-width="2"/>
+    <text x="555" y="78" fill="#8B949E">CHARGE</text>
+    <circle cx="645" cy="55" r="8" fill="#161B22" stroke="#2DD4BF" stroke-width="2"/>
+    <text x="645" y="78" fill="#8B949E">CLAIM</text>
+    <circle cx="735" cy="55" r="8" fill="#161B22" stroke="#58A6FF" stroke-width="2"/>
+    <text x="735" y="78" fill="#8B949E">PAYER</text>
+    <circle cx="845" cy="34" r="9" fill="#161B22" stroke="#3FB950" stroke-width="2">
+      <animate attributeName="r" values="9;11;9" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="845" y="18" fill="#3FB950">PAID</text>
+    <circle cx="845" cy="92" r="9" fill="#161B22" stroke="#F778BA" stroke-width="2">
+      <animate attributeName="r" values="9;10.5;9" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="871" y="96" fill="#F778BA" text-anchor="start">DENIED</text>
+  </g>
+
+  <!-- clean claims flowing to PAID -->
+  <g fill="url(#pulseGreen)">
+    <circle r="4">
+      <animateMotion path="M555,55 L645,55 L735,55 L845,34" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4">
+      <animateMotion path="M555,55 L645,55 L735,55 L845,34" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- one claim gets denied, loops back through rework, then gets PAID: the denial recovery story -->
+  <circle r="4.5">
+    <animateMotion
+      path="M555,55 L645,55 L735,55 L845,92 C 820,145 690,140 646,66 L735,55 L845,34"
+      dur="9s" begin="0.6s" repeatCount="indefinite"
+      keyPoints="0;0.42;0.42;0.75;0.75;1" keyTimes="0;0.38;0.44;0.72;0.78;1" calcMode="linear"/>
+    <animate attributeName="fill" values="#2DD4BF;#2DD4BF;#F778BA;#F778BA;#2DD4BF;#3FB950"
+      keyTimes="0;0.36;0.42;0.72;0.8;1" dur="9s" begin="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;1;1;0" keyTimes="0;0.05;0.4;0.7;0.95;1" dur="9s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- the workqueue ping-pong, caught by the radar -->
+  <g font-family="Consolas, Monaco, monospace" font-size="9.5">
+    <rect x="588" y="158" width="52" height="24" rx="5" fill="#161B22" stroke="#58A6FF" stroke-width="1.5"/>
+    <text x="614" y="174" fill="#8B949E" text-anchor="middle">WQ 04</text>
+    <rect x="742" y="158" width="52" height="24" rx="5" fill="#161B22" stroke="#58A6FF" stroke-width="1.5"/>
+    <text x="768" y="174" fill="#8B949E" text-anchor="middle">WQ 11</text>
+    <path d="M640,170 H742" stroke="#30363D" stroke-width="1.2"/>
+    <!-- the same claim, bouncing -->
+    <circle cy="170" r="4" fill="#F778BA">
+      <animate attributeName="cx" values="648;734;648;734;648;648" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;1;1;1;0" keyTimes="0;0.2;0.4;0.6;0.82;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- radar ping when the oscillation crosses the threshold -->
+    <circle cx="691" cy="170" r="0" fill="none" stroke="#3FB950" stroke-width="1.5">
+      <animate attributeName="r" values="0;0;24" keyTimes="0;0.8;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0" keyTimes="0;0.8;0.82;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="691" y="205" fill="#3FB950" text-anchor="middle" opacity="0">
+      conflict detected: rule pair named
+      <animate attributeName="opacity" values="0;0;1;0" keyTimes="0;0.8;0.86;1" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- headline with animated gradient -->
+  <text x="48" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="url(#headline)">Manoj Kumar Chunduru</text>
+  <text x="50" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#8B949E">Epic HB Analyst &#183; Denials &#183; Charge Capture &#183; UAT &#183; Workqueues</text>
+
+  <!-- terminal line, typed out then cursor keeps blinking -->
+  <text x="48" y="174" font-family="Consolas, Monaco, monospace" font-size="14" fill="#3FB950" clip-path="url(#typewriter)">$ every metric on this profile regenerates from a clone</text>
+  <rect x="50" y="163" width="8" height="14" fill="#3FB950">
+    <animate attributeName="x" from="50" to="440" begin="0.8s" dur="2.6s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" begin="3.4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
