@@ -1,0 +1,36 @@
+<svg viewBox="0 0 1000 250" width="1000" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech stack by experience level: Epic Resolute HB, SQL, and Excel reporting at expert level; Python, Power BI, and DuckDB with pytest and CI at advanced level; HL7 FHIR, Tableau, and SSRS at working level.">
+  <rect width="1000" height="250" rx="12" fill="#0D1117"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+    <!-- track + fill pairs; fills grow in on load -->
+    <g font-size="13.5" fill="#e0e1dd">
+      <text x="36" y="42">Epic Resolute HB &#183; RCM &#183; Denials &#183; Workqueues</text>
+      <rect x="36" y="52" width="640" height="9" rx="4.5" fill="#161B22"/>
+      <rect x="36" y="52" width="0" height="9" rx="4.5" fill="#4cc9f0">
+        <animate attributeName="width" from="0" to="608" dur="1.2s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <text x="694" y="61" font-size="12" fill="#4cc9f0" font-weight="600">EXPERT &#183; 3+ yrs production</text>
+
+      <text x="36" y="94">SQL (window functions, layered models) &#183; Excel automation</text>
+      <rect x="36" y="104" width="640" height="9" rx="4.5" fill="#161B22"/>
+      <rect x="36" y="104" width="0" height="9" rx="4.5" fill="#4cc9f0">
+        <animate attributeName="width" from="0" to="588" dur="1.2s" begin="0.4s" fill="freeze"/>
+      </rect>
+      <text x="694" y="113" font-size="12" fill="#4cc9f0" font-weight="600">EXPERT &#183; Clarity / RW reporting</text>
+
+      <text x="36" y="146">Python &#183; DuckDB &#183; Power BI &#183; pytest &#183; GitHub Actions</text>
+      <rect x="36" y="156" width="640" height="9" rx="4.5" fill="#161B22"/>
+      <rect x="36" y="156" width="0" height="9" rx="4.5" fill="#80ed99">
+        <animate attributeName="width" from="0" to="486" dur="1.2s" begin="0.6s" fill="freeze"/>
+      </rect>
+      <text x="694" y="165" font-size="12" fill="#80ed99" font-weight="600">ADVANCED &#183; 4 measured repos</text>
+
+      <text x="36" y="198">HL7v2 / FHIR &#183; Tableau &#183; SSRS &#183; PostgreSQL &#183; Oracle</text>
+      <rect x="36" y="208" width="640" height="9" rx="4.5" fill="#161B22"/>
+      <rect x="36" y="208" width="0" height="9" rx="4.5" fill="#c77dff">
+        <animate attributeName="width" from="0" to="352" dur="1.2s" begin="0.8s" fill="freeze"/>
+      </rect>
+      <text x="694" y="217" font-size="12" fill="#c77dff" font-weight="600">WORKING &#183; interface validation</text>
+    </g>
+  </g>
+</svg>
