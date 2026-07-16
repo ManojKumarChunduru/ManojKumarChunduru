@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1000 260" width="1000" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manoj Kumar Chunduru, Epic Hospital Billing Analyst, Revenue Cycle Analytics">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#1b263b"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#4cc9f0"/>
+      <stop offset="1" stop-color="#80ed99"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="260" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="260" fill="url(#bg)"/>
+
+    <!-- subtle grid -->
+    <g stroke="#415a77" stroke-width="0.5" opacity="0.18">
+      <path d="M0 65 H1000 M0 130 H1000 M0 195 H1000"/>
+      <path d="M125 0 V260 M250 0 V260 M375 0 V260 M500 0 V260 M625 0 V260 M750 0 V260 M875 0 V260"/>
+    </g>
+
+    <!-- EKG pulse flowing into rising bars: clinical signal becomes analytics -->
+    <path id="ekg" d="M20 200 H190 l14 -26 l20 52 l16 -70 l18 44 l12 0 H420"
+          fill="none" stroke="url(#pulse)" stroke-width="2.5" stroke-linecap="round"
+          stroke-dasharray="460" stroke-dashoffset="460" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="460;0;0;-460" keyTimes="0;0.35;0.7;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#80ed99">
+      <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear">
+        <mpath href="#ekg"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.33;0.36;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- bars the pulse feeds -->
+    <g fill="#4cc9f0" opacity="0.85">
+      <rect x="448" y="206" width="16" rx="2" height="0">
+        <animate attributeName="height" values="0;34;34" keyTimes="0;0.5;1" dur="6s" begin="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="206;172;172" keyTimes="0;0.5;1" dur="6s" begin="1.4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="472" y="206" width="16" rx="2" height="0" fill="#56cfe1">
+        <animate attributeName="height" values="0;52;52" keyTimes="0;0.5;1" dur="6s" begin="1.7s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="206;154;154" keyTimes="0;0.5;1" dur="6s" begin="1.7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="496" y="206" width="16" rx="2" height="0" fill="#72efdd">
+        <animate attributeName="height" values="0;42;42" keyTimes="0;0.5;1" dur="6s" begin="2.0s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="206;164;164" keyTimes="0;0.5;1" dur="6s" begin="2.0s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="520" y="206" width="16" rx="2" height="0" fill="#80ed99">
+        <animate attributeName="height" values="0;66;66" keyTimes="0;0.5;1" dur="6s" begin="2.3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="206;140;140" keyTimes="0;0.5;1" dur="6s" begin="2.3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <path d="M440 206 H545" stroke="#415a77" stroke-width="1"/>
+
+    <!-- name and title -->
+    <text x="48" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#e0e1dd" letter-spacing="0.5">Manoj Kumar Chunduru</text>
+    <text x="48" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#4cc9f0" letter-spacing="2">EPIC HOSPITAL BILLING ANALYST  |  REVENUE CYCLE ANALYTICS</text>
+
+    <!-- rotating specialty lines: one per portfolio repo -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#98a8b8">
+      <text x="48" y="146" opacity="0">
+        Denial pattern mining and revenue leakage analytics
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.22;0.25;1" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="48" y="146" opacity="0">
+        HL7 order-to-charge reconciliation and charge capture
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.28;0.47;0.5;1" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="48" y="146" opacity="0">
+        UAT regression automation for EHR upgrades
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.53;0.72;0.75;1" dur="20s" repeatCount="indefinite"/>
+      </text>
+      <text x="48" y="146" opacity="0">
+        Workqueue flow analytics and routing conflict detection
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.78;0.97;1" dur="20s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- metric chips: every number measured in a public repo -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5">
+      <g>
+        <rect x="620" y="52" width="332" height="30" rx="15" fill="#1b3a4b" stroke="#4cc9f0" stroke-opacity="0.35"/>
+        <text x="638" y="71" fill="#e0e1dd">99.5% denial detection precision, measured</text>
+      </g>
+      <g>
+        <rect x="620" y="90" width="332" height="30" rx="15" fill="#1b3a4b" stroke="#4cc9f0" stroke-opacity="0.35"/>
+        <text x="638" y="109" fill="#e0e1dd">1M-row upgrade validation in 67s on 1 vCPU</text>
+      </g>
+      <g>
+        <rect x="620" y="128" width="332" height="30" rx="15" fill="#1b3a4b" stroke="#4cc9f0" stroke-opacity="0.35"/>
+        <text x="638" y="147" fill="#e0e1dd">30K HL7 messages/s parsed and reconciled</text>
+      </g>
+      <g>
+        <rect x="620" y="166" width="332" height="30" rx="15" fill="#1b3a4b" stroke="#4cc9f0" stroke-opacity="0.35"/>
+        <text x="638" y="185" fill="#e0e1dd">SQL + Python + Power BI + Tableau + Excel</text>
+      </g>
+    </g>
+
+    <!-- footer line -->
+    <text x="48" y="232" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#778da9">
+      Every metric on this profile is measured by code you can clone and run
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
