@@ -36,7 +36,6 @@ Four repos, four different revenue cycle bottlenecks, four different mechanisms.
 | [**hl7-charge-capture-reconciler**](https://github.com/ManojKumarChunduru/hl7-charge-capture-reconciler) | Ordered care that never becomes a posted charge is findable and priceable from raw HL7v2 | **0.98 missing-charge recall** with honest false positive accounting; ~30K msg/s; $1.8M missing and $2.8M late charges priced |
 | [**workqueue-flow-radar**](https://github.com/ManojKumarChunduru/workqueue-flow-radar) | Conflicting routing rules that ping-pong claims between queues can be caught and named from the event log alone | **1.0 precision and recall** on labeled victims; 1.1M events in 7s; renders the daily ops packet (Excel + PDF) |
 
-Each repo carries architecture decision records, a documented war story with its fix commit, one feature deliberately out of scope with its trigger, and a README that says out loud when a perfect metric is a property of the synthetic world.
 
 ## Building blocks
 
