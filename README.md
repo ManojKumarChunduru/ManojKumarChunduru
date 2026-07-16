@@ -9,7 +9,7 @@ I work the seam where clinical operations become revenue, and I build analytics 
   <img src="https://img.shields.io/badge/Open%20to-Epic%20Analyst%20%7C%20RCM%20Analytics-0D1117?style=for-the-badge&logo=githubsponsors&logoColor=80ed99" alt="Open to roles"/>
 </p>
 
-##The Numbers
+## The Numbers
 
 <table>
   <tr>
