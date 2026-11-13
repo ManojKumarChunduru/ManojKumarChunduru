@@ -5,9 +5,7 @@
 [![Profile views](https://komarev.com/ghpvc/?username=ManojKumarChunduru&color=1b2a41&style=flat)](https://github.com/ManojKumarChunduru)
 [![Repositories](https://img.shields.io/badge/repositories-7-1b2a41)](https://github.com/ManojKumarChunduru?tab=repositories)
 [![Tests](https://img.shields.io/badge/tests-1783-2b4a7a)](https://manojkumarchunduru.github.io/coverage-map.html)
-[![Hub](https://img.shields.io/badge/portfolio%20hub-manojkumarchunduru.github.io-d9a200)](https://manojkumarchunduru.github.io)
 
-</div>
 
 <table align="center">
 <tr>
@@ -49,7 +47,7 @@ Same CRM, three layers. The first job was configuration and the Apex around it: 
 
 **In the open (this profile)**
 
-- Seven offline, deterministic tools over committed SFDX fixtures, one per impossibility
+
 - Receipts: every figure in every README, ADR and defense guide re-measured by `make verify` and checked against the prose
 - The boundary stated in every repository: which claims the fixture supports and which need a scratch org
 - Next: the scratch org experiments each ADR-005 names, in the order the audits ranked them
@@ -115,49 +113,7 @@ The yardstick for each level: could I debug this in production at three in the m
 
 </div>
 
-## The repositories
 
-Seven, in the order they were built, from closest to the day job to most senior. Each one leads with its impossibility, publishes the uncomfortable number first, and re-measures every figure in its own documents.
-
-| Repository | Language | Tests | Coverage | The measurement it produced |
-| --- | --- | --- | --- | --- |
-| [agentforce-action-contract-linter](https://github.com/ManojKumarChunduru/agentforce-action-contract-linter) | Python | 250 | 99.5% | **6 of 13 findings invisible to a name-only review** |
-| [data-cloud-identity-resolution-audit](https://github.com/ManojKumarChunduru/data-cloud-identity-resolution-audit) | Python | 214 | 100.0% | **83 over-merged profiles behind a rate 0.8 points from ideal** |
-| [apex-bulk-safety-gate](https://github.com/ManojKumarChunduru/apex-bulk-safety-gate) | Python | 309 | 99.3% | **tested at 100 records, breaches at 101** |
-| [save-order-conflict-tracer](https://github.com/ManojKumarChunduru/save-order-conflict-tracer) | Node.js | 241 | 99.4% | **28 writes lost before commit** |
-| [crm-sync-referee](https://github.com/ManojKumarChunduru/crm-sync-referee) | Node.js | 185 | 98.5% | **21 of 85 diffs no referee can attribute** |
-| [sharing-exposure-audit](https://github.com/ManojKumarChunduru/sharing-exposure-audit) | Python | 291 | 99.9% | **655 pairs hidden through the one term on no page** |
-| [prompt-regression-gate](https://github.com/ManojKumarChunduru/prompt-regression-gate) | Python | 293 | 99.0% | **the preferred rewrite carries the most fabricated claims and is blocked** |
-
-7 repositories, 1783 tests, 35 decision records, 31 experiments. The [coverage map](https://manojkumarchunduru.github.io/coverage-map.html) traces every resume claim to the repository that evidences it and every orphan skill to the measurement that closes it; three (Pinecone, MongoDB, LangChain) are not closable offline and are stated there rather than faked.
-
-## How they are all built
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**The uncomfortable number first**
-
-Every README opens with what the tool cannot do or the case it loses: the actions it cannot decide, the over-merges no single rule explains, the fields it cannot order, the pairs it cannot attribute, the reviews it cannot separate from noise. The headline is never a success metric.
-
-</td>
-<td width="33%" valign="top">
-
-**Machine-checked figures**
-
-`tools/collect_metrics.py` re-measures every number into `docs/metrics.json`; `tools/check_numbers.py` matches each one to its sentence by an anchor phrase, so a stale figure fails the build. The checker is proven in every repository by changing a figure and watching it exit 1.
-
-</td>
-<td width="33%" valign="top">
-
-**Offline and reproducible**
-
-No org, no key, no network at runtime. A committed SFDX fixture or a seeded generator reproduces every figure with `make verify` from a fresh clone, on three interpreter versions, byte for byte. A boundary ADR in each repository says which claims need a scratch org, and names the experiment.
-
-</td>
-</tr>
-</table>
 
 ## Credentials
 
@@ -176,9 +132,8 @@ MS in Data Management and Analytics, Washington University of Science and Techno
 <div align="center">
 
 [![Email](https://img.shields.io/badge/hello.manojchunduru%40gmail.com-email-2b4a7a?style=flat&logo=gmail&logoColor=white)](mailto:hello.manojchunduru@gmail.com)
-[![Hub](https://img.shields.io/badge/manojkumarchunduru.github.io-portfolio%20hub-d9a200?style=flat)](https://manojkumarchunduru.github.io)
-[![Coverage map](https://img.shields.io/badge/coverage%20map-resume%20claims%20to%20evidence-1b2a41?style=flat)](https://manojkumarchunduru.github.io/coverage-map.html)
 
-<sub>Every repository is offline and deterministic: clone it, run <code>make verify</code>, and every number in its README is re-measured in front of you.</sub>
+
+
 
 </div>
