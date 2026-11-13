@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Manoj Kumar Chunduru: Salesforce platform developer with an Agentforce, Data Cloud and Einstein specialisation; seven repositories, each built around one thing the usual artefact cannot tell you">
+  <defs>
+    <linearGradient id="headline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fc1ff"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffe08a"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15213a"/>
+      <stop offset="1" stop-color="#1f3b63"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif; }
+    .name { font-size: 44px; font-weight: 800; letter-spacing: -1px; fill: url(#headline); }
+    .role { font-size: 18px; fill: #c7d0e0; }
+    .claim { font-size: 15px; fill: #9fb0cc; }
+    .layer { fill: none; stroke-width: 2; opacity: 0; animation: rise 0.9s ease-out forwards; }
+    .layer text { opacity: 1; }
+    .l1 { stroke: #5f7ba6; animation-delay: 0.3s; } .l2 { stroke: #9fc1ff; animation-delay: 0.9s; } .l3 { stroke: #ffe08a; animation-delay: 1.5s; }
+    .llabel { font-size: 12px; fill: #c7d0e0; opacity: 0; animation: fade 0.6s ease-out forwards; }
+    .k1 { animation-delay: 0.7s; } .k2 { animation-delay: 1.3s; } .k3 { animation-delay: 1.9s; }
+    .node { opacity: 0; animation: fade 0.5s ease-out forwards; }
+    .n1 { animation-delay: 2.2s; } .n2 { animation-delay: 2.4s; } .n3 { animation-delay: 2.6s; } .n4 { animation-delay: 2.8s; }
+    .n5 { animation-delay: 3.0s; } .n6 { animation-delay: 3.2s; } .n7 { animation-delay: 3.4s; }
+    .nlabel { font-size: 10px; fill: #8793a8; }
+    .count { font-size: 13px; fill: #ffe08a; font-weight: 600; opacity: 0; animation: fade 0.8s ease-out 3.8s forwards; }
+    .sweep { animation: drift 14s ease-in-out infinite alternate; }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes drift { from { transform: translateX(-40px); } to { transform: translateX(120px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .layer, .llabel, .node, .count { animation: none; opacity: 1; transform: none; }
+      .sweep { animation: none; }
+    }
+  </style>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <ellipse class="sweep" cx="960" cy="60" rx="380" ry="120" fill="#2b4a7a" opacity="0.35"/>
+
+  <text x="48" y="92" class="name">Manoj Kumar Chunduru</text>
+  <text x="48" y="124" class="role">Salesforce Agentforce Developer. Platform developer with an Agentforce, Data Cloud and Einstein specialisation.</text>
+  <text x="48" y="150" class="claim">Seven repositories, each built around one thing the usual Salesforce artefact cannot tell you, with every number re-measured by the code that produced it.</text>
+
+  <!-- three successively deeper layers on one CRM: configuration, platform, data and AI on platform -->
+  <g class="layer l1"><rect x="48" y="196" width="346" height="26" rx="6"/></g>
+  <text x="60" y="214" class="llabel k1">configuration developer: Flow, Workflow, Process Builder</text>
+  <g class="layer l2"><rect x="48" y="228" width="346" height="26" rx="6"/></g>
+  <text x="60" y="246" class="llabel k2">platform developer: Apex, LWC, integration, sharing</text>
+  <g class="layer l3"><rect x="48" y="260" width="346" height="26" rx="6"/></g>
+  <text x="60" y="278" class="llabel k3">data and AI on platform: Data Cloud, Agentforce, Prompts</text>
+
+  <!-- the seven repositories as nodes along one line -->
+  <line x1="420" y1="240" x2="1150" y2="240" stroke="#3b5580" stroke-width="1"/>
+  <g class="node n1"><circle cx="440" cy="240" r="7" fill="#9fc1ff"/><text x="440" y="264" class="nlabel" text-anchor="middle">agent actions</text></g>
+  <g class="node n2"><circle cx="555" cy="240" r="7" fill="#9fc1ff"/><text x="555" y="264" class="nlabel" text-anchor="middle">identity resolution</text></g>
+  <g class="node n3"><circle cx="670" cy="240" r="7" fill="#9fc1ff"/><text x="670" y="264" class="nlabel" text-anchor="middle">bulk safety</text></g>
+  <g class="node n4"><circle cx="785" cy="240" r="7" fill="#9fc1ff"/><text x="785" y="264" class="nlabel" text-anchor="middle">save order</text></g>
+  <g class="node n5"><circle cx="900" cy="240" r="7" fill="#9fc1ff"/><text x="900" y="264" class="nlabel" text-anchor="middle">sync referee</text></g>
+  <g class="node n6"><circle cx="1015" cy="240" r="7" fill="#9fc1ff"/><text x="1015" y="264" class="nlabel" text-anchor="middle">effective access</text></g>
+  <g class="node n7"><circle cx="1130" cy="240" r="7" fill="#ffe08a"/><text x="1130" y="264" class="nlabel" text-anchor="middle">prompt gate</text></g>
+  <text x="1150" y="206" class="count" text-anchor="end">7 repositories, 1783 tests, 35 decision records, 31 experiments</text>
+</svg>
