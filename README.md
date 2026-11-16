@@ -127,13 +127,4 @@ MS in Data Management and Analytics, Washington University of Science and Techno
 
 </div>
 
-## Quick Connect
 
-<div align="center">
-
-[![Email](https://img.shields.io/badge/hello.manojchunduru%40gmail.com-email-2b4a7a?style=flat&logo=gmail&logoColor=white)](mailto:manojkumarchunduru26@gmail.com)
-
-
-
-
-</div>
